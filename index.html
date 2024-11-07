@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMSI Student Success Portal - Home</title>
+    <style>
+        /* Basic reset for consistency across browsers */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 10px;
+        }
+    
+        header {
+            background-color: #00284D;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    
+        header img {
+            max-width: 60px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 0.9rem; /* Smaller font for small screens */
+        }
+    
+        nav ul li {
+            margin: 0 10px;
+        }
+    
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        nav ul li a.active {
+            border-bottom: 2px solid yellow;
+            font-weight: bold;
+        }
+    
+        h1 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        /* Skip to Main Link */
+        a.skip-to-main {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            background-color: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        a.skip-to-main:focus {
+            top: 10px;
+        }
+    
+        main {
+            padding: 20px 10px;
+        }
+    
+        main h2 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            color: #1D3B69;
+        }
+
+        main p, main ul {
+            font-size: 1rem;
+            color: #333;
+        }
+    
+        figure img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    
+        footer {
+            background-color: #00284D;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-section {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        /* Responsive adjustments for screens 400px and below */
+        @media(max-width: 400px) {
+            body {
+                padding: 5px;
+            }
+
+            header {
+                padding: 5px 0;
+            }
+
+            header img {
+                max-width: 50px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            main h2 {
+                font-size: 1.1rem;
+            }
+
+            main p, main ul {
+                font-size: 0.9rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer .footer-section {
+                text-align: center;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Tablet and Desktop view adjustments */
+        @media(min-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                text-align: left;
+            }
+
+            header img {
+                max-width: 120px;
+            }
+
+            nav ul {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            h1 {
+                font-size: 2rem;
+                text-align: left;
+            }
+
+            footer {
+                padding: 20px;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-main">Skip to Main Content</a>
+
+    <header>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="Food_Pantry.html">Cupboard</a></li>
+                <li><a href="Advising.html">Advising</a></li>
+                <li><a href="Tutoring.html">Tutoring</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h2>Explore Resources to Support Your Success</h2>
+            <p>The UMSI Student Success Portal offers a wide range of resources to help students thrive in their academic and personal lives. From academic support to wellness resources, this portal is your go-to guide for all things student success at UMSI.</p>
+            <figure>
+                <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+                <figcaption>Access a wide range of resources designed for UMSI students.</figcaption>
+            </figure>
+        </section>
+        
+        <section>
+            <h2>What You’ll Find Here</h2>
+            <p>Our portal includes the following resources:</p>
+            <ul>
+                <li><strong>Academic Support</strong>: Tutoring, advising, and course resources to help you excel.</li>
+                <li><strong>Health and Wellness</strong>: Physical and mental health resources to keep you in top shape.</li>
+                <li><strong>Life Outside the Classroom</strong>: Guidance on extracurricular activities, housing, and more.</li>
+                <li><strong>Career Services</strong>: Tools and support for internships, job searches, and career development.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>How to Get Started</h2>
+            <p>Explore the sections above to find detailed information on each resource. Reach out to our team if you need personalized support or have specific questions. We're here to help every step of the way!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" style="width: 80px; height: auto;">
+                <p>University of Michigan School of Information</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@umich.edu">info@umich.edu</a></p>
+                <p>Phone: (734) 555-1234</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="https://twitter.com/umsi">Twitter</a>
+            </div>
+            <div class="footer-section">
+                <p>&copy; <span id="current-year"></span> University of Michigan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to dynamically update the current year in the footer
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMSI Student Success Portal - Food Pantry</title>
+    <style>
+        /* Basic reset for consistency across browsers */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 10px;
+        }
+    
+        header {
+            background-color: #00284D;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    
+        header img {
+            max-width: 60px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 0.9rem; /* Smaller font for small screens */
+        }
+    
+        nav ul li {
+            margin: 0 10px;
+        }
+    
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        nav ul li a.active {
+            border-bottom: 2px solid yellow;
+            font-weight: bold;
+        }
+    
+        h1 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        /* Skip to Main Link */
+        a.skip-to-main {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            background-color: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        a.skip-to-main:focus {
+            top: 10px;
+        }
+    
+        main {
+            padding: 20px 10px;
+        }
+    
+        main h2 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            color: #1D3B69;
+        }
+
+        main p, main ul {
+            font-size: 1rem;
+            color: #333;
+        }
+    
+        figure img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    
+        footer {
+            background-color: #00284D;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-section {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        /* Responsive adjustments for screens 400px and below */
+        @media(max-width: 400px) {
+            body {
+                padding: 5px;
+            }
+
+            header {
+                padding: 5px 0;
+            }
+
+            header img {
+                max-width: 50px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            main h2 {
+                font-size: 1.1rem;
+            }
+
+            main p, main ul {
+                font-size: 0.9rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer .footer-section {
+                text-align: center;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Tablet and Desktop view adjustments */
+        @media(min-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                text-align: left;
+            }
+
+            header img {
+                max-width: 120px;
+            }
+
+            nav ul {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            h1 {
+                font-size: 2rem;
+                text-align: left;
+            }
+
+            footer {
+                padding: 20px;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-main">Skip to Main Content</a>
+
+    <header>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Food_Pantry.html" class="active">Cupboard</a></li>
+                <li><a href="Advising.html">Advising</a></li>
+                <li><a href="Tutoring.html">Tutoring</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h2>Welcome to the UMSI Food Pantry</h2>
+            <p>The UMSI Food Pantry is dedicated to supporting students, faculty, and staff in need by providing access to nutritious and non-perishable food items. We understand the challenges that come with managing finances while balancing academic responsibilities, and we're here to help. Our mission is to ensure that no one in our community goes hungry.</p>
+            <figure>
+                <img src="images/food_pantry_pic.png" alt="Food Pantry Shelves" />
+                <figcaption>The UMSI Food Pantry offers essential resources and donation options.</figcaption>
+            </figure>
+        </section>
+        
+        <section>
+            <h2>How It Works</h2>
+            <p>Using the UMSI Food Pantry is simple and confidential. Here's how you can access our services:</p>
+            <ul>
+                <li>Visit our pantry during open hours or request an appointment for a more private visit.</li>
+                <li>Select from a variety of available food items, including canned goods, fresh produce, and personal care products.</li>
+                <li>All visits are confidential, and no personal information will be shared outside the pantry team.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Donation Opportunities</h2>
+            <p>We rely on donations to keep our pantry stocked and running. If you'd like to support the UMSI Food Pantry, here are some ways to contribute:</p>
+            <ul>
+                <li>Donate non-perishable food items such as canned vegetables, pasta, and grains.</li>
+                <li>Contribute personal care products like soap, shampoo, and toothpaste.</li>
+                <li>Monetary donations are always welcome and help us purchase fresh produce and other essentials.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" style="width: 80px; height: auto;">
+                <p>University of Michigan School of Information</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@umich.edu">info@umich.edu</a></p>
+                <p>Phone: (734) 555-1234</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="https://twitter.com/umsi">Twitter</a>
+            </div>
+            <div class="footer-section">
+                <p>&copy; <span id="current-year"></span> University of Michigan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to dynamically update the current year in the footer
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
